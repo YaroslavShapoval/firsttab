@@ -1,0 +1,30 @@
+{
+  "name": "firstdeal",
+  "version": "0.0.1",
+  "description": "New tab page for popularity browsers",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "speed",
+    "dial",
+    "new",
+    "tab"
+  ],
+  "author": "Yaroslav Shapoval",
+  "license": "MIT",
+  "devDependencies": {
+    "connect-livereload": "^0.3.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-livereload": "^1.2.0",
+    "gulp-plumber": "^0.6.0",
+    "gulp": "^3.6.0",
+    "gulp-coffee": "^1.4.1",
+    "tiny-lr": "0.0.5",
+    "gulp-uglify": "^0.2.1",
+    "gulp-stylus": "^0.1.0",
+    "gulp-csso": "^0.2.7",
+    "connect": "^2.14.4"
+  }
+}
