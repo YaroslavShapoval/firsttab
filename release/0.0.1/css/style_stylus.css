@@ -47,13 +47,25 @@ body {
   background-image: url("../img/dials/vkcom.png");
 }
 #dial4 > .dial-bg {
-  background-image: url("../img/dials/gmail.png");
+  background-image: url("../img/dials/habrahabr.png");
 }
 #dial5 > .dial-bg {
-  background-image: url("../img/dials/evernote.png");
+  background-image: url("../img/dials/gmail.png");
 }
 #dial6 > .dial-bg {
+  background-image: url("../img/dials/evernote.png");
+}
+#dial7 > .dial-bg {
+  background-image: url("../img/dials/imgur.png");
+}
+#dial8 > .dial-bg {
+  background-image: url("../img/dials/hulu.png");
+}
+#dial9 > .dial-bg {
   background-image: url("../img/dials/php.png");
+}
+#dialplus > .dial-bg {
+  background-image: url("../img/dials/plus.png");
 }
 .dial-description {
   color: #111;
