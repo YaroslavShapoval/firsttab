@@ -1,0 +1,10 @@
+{
+  "name": "firstdeal",
+  "version": "0.0.1",
+  "description": "New tab page for popularity browsers",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "firstpage.html"
+  },
+  "manifest_version": 2
+}
