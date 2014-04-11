@@ -1,0 +1,74 @@
+body {
+  background: url("../img/mooning.png") repeat #fafafa;
+  font-size: 15px;
+}
+.dials {
+  margin: 50px 40px;
+  text-align: center;
+}
+.dial {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #aaa;
+  text-align: center;
+  width: 340px;
+  height: 180px;
+  margin: 40px 20px 0px;
+  padding: 7px 0;
+  background: #fafafa;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.dial > a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+.dial:hover {
+  border: 1px solid #787878;
+}
+.dial-bg {
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  height: 180px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+#dial1 > .dial-bg {
+  background-image: url("../img/dials/feedly.png");
+}
+#dial2 > .dial-bg {
+  background-image: url("../img/dials/getpocket.png");
+}
+#dial3 > .dial-bg {
+  background-image: url("../img/dials/vkcom.png");
+}
+#dial4 > .dial-bg {
+  background-image: url("../img/dials/habrahabr.png");
+}
+#dial5 > .dial-bg {
+  background-image: url("../img/dials/gmail.png");
+}
+#dial6 > .dial-bg {
+  background-image: url("../img/dials/evernote.png");
+}
+#dial7 > .dial-bg {
+  background-image: url("../img/dials/imgur.png");
+}
+#dial8 > .dial-bg {
+  background-image: url("../img/dials/hulu.png");
+}
+#dial9 > .dial-bg {
+  background-image: url("../img/dials/php.png");
+}
+#dialplus > .dial-bg {
+  background-image: url("../img/dials/plus.png");
+}
+.dial-description {
+  color: #111;
+  font: 1em Arial;
+  display: none;
+}

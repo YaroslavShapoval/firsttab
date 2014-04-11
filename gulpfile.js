@@ -124,7 +124,7 @@ gulp.task('watch', function() {
     });
 
     gulp.watch(paths.images, function() {
-      gulp.run('iamges');
+      gulp.run('images');
     });
   });
 
