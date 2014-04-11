@@ -28,47 +28,58 @@ body {
 .dial:hover {
   border: 1px solid #787878;
 }
-.dial-bg {
+#dial1 .dial-icon {
+  background-image: url("../img/dials/feedly.png");
+}
+#dial2 .dial-icon {
+  background-image: url("../img/dials/getpocket.png");
+}
+#dial3 .dial-icon {
+  background-image: url("../img/dials/vkcom.png");
+}
+#dial4 .dial-icon {
+  background-image: url("../img/dials/habrahabr.png");
+}
+#dial5 .dial-icon {
+  background-image: url("../img/dials/gmail.png");
+}
+#dial6 .dial-icon {
+  background-image: url("../img/dials/evernote.png");
+}
+#dial7 .dial-icon {
+  background-image: url("../img/dials/imgur.png");
+}
+#dial8 .dial-icon {
+  background-image: url("../img/dials/hulu.png");
+}
+#dial9 .dial-icon {
+  background-image: url("../img/dials/php.png");
+}
+#dialplus .dial-icon {
+  background-image: url("../img/dials/plus.png");
+}
+.dial-icon {
+  float: left;
   position: relative;
   display: inline-block;
-  width: 240px;
-  height: 180px;
+  width: 160px;
+  height: 120px;
+  margin: 30px 0 0 10px;
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-#dial1 > .dial-bg {
-  background-image: url("../img/dials/feedly.png");
-}
-#dial2 > .dial-bg {
-  background-image: url("../img/dials/getpocket.png");
-}
-#dial3 > .dial-bg {
-  background-image: url("../img/dials/vkcom.png");
-}
-#dial4 > .dial-bg {
-  background-image: url("../img/dials/habrahabr.png");
-}
-#dial5 > .dial-bg {
-  background-image: url("../img/dials/gmail.png");
-}
-#dial6 > .dial-bg {
-  background-image: url("../img/dials/evernote.png");
-}
-#dial7 > .dial-bg {
-  background-image: url("../img/dials/imgur.png");
-}
-#dial8 > .dial-bg {
-  background-image: url("../img/dials/hulu.png");
-}
-#dial9 > .dial-bg {
-  background-image: url("../img/dials/php.png");
-}
-#dialplus > .dial-bg {
-  background-image: url("../img/dials/plus.png");
-}
 .dial-description {
+  display: inline-block;
+  margin: 70px 20px 0 0;
+  height: 40px;
+  font-family: Arial;
+}
+.dial-heading {
   color: #111;
-  font: 1em Arial;
-  display: none;
+  font-size: 1.3em;
+}
+.dial-address {
+  color: #787878;
+  font-size: 0.9em;
 }

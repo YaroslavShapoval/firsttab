@@ -13,7 +13,9 @@ var lr = require('tiny-lr'), // Минивебсервер для livereload
     var paths = {
       js: ['assets/scripts/js/**/*'],
       coffee: ['assets/scripts/coffee/**/*'],
-      stylus: ['assets/styles/stylus/**/*'],
+      //stylus: ['assets/styles/stylus/**/*'],
+      stylus: ['assets/styles/stylus/main.styl'],
+      styluswatch: ['assets/styles/stylus/**/*'],
       css: ['assets/styles/css/**/*'],
       pages: ['assets/**/*.html'],
       images: ['assets/img/**/*']
@@ -107,7 +109,7 @@ gulp.task('watch', function() {
       gulp.run('css');
     });
 
-    gulp.watch(paths.stylus, function() {
+    gulp.watch(paths.styluswatch, function() {
       gulp.run('stylus');
     });
 
