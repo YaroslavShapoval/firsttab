@@ -58,56 +58,31 @@ body {
 #dialplus .dial-icon {
   background-image: url("../img/dials/plus.png");
 }
-body {
-  background: #fafafa;
-}
-.dial {
+.dial-icon {
+  float: left;
   position: relative;
-  background: #f00;
+  display: inline-block;
+  width: 160px;
+  height: 120px;
+  margin: 30px 0 0 10px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 .dial-description {
-  position: relative;
-  display: inline;
-  line-height: 180px;
-}
-.dial-icon,
-.dial-address {
-  display: none;
+  display: inline-block;
+  margin: 65px 20px 0 0;
+  height: 40px;
+  font-family: Arial;
 }
 .dial-heading {
-  position: relative;
-  text-align: center;
-  font-family: 'Philosopher', sans-serif;
-  font-family: 'Capriola', 'Philosopher', sans-serif;
-  font-family: 'Capriola', sans-serif;
-  font-weight: 700;
-  color: #fafafa;
-  font-size: 2.3em;
+  font-family: 'Noto Serif', serif;
+  color: #111;
+  font-size: 1.3em;
 }
-#dial1.dial {
-  background: #4cba28;
-}
-#dial2.dial {
-  background: #ee4055;
-}
-#dial3.dial {
-  background: #4c75a3;
-}
-#dial4.dial {
-  background: #78a3b6;
-}
-#dial5.dial {
-  background: #ab3226;
-}
-#dial6.dial {
-  background: #6cb043;
-}
-#dial7.dial {
-  background: #8ac724;
-}
-#dial8.dial {
-  background: #6cb043;
-}
-#dial9.dial {
-  background: #6c7eb7;
+.dial-address {
+  padding-top: 5px;
+  font-family: 'Forum', cursive;
+  color: #787878;
+  font-size: 1em;
 }
