@@ -1,5 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Noto\+Serif&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic);
+
 body
-  background url(../img/mooning.png) repeat $white
+  background url(../img/mooning.png) repeat $gray
   font-size 15px
 
 .dials
@@ -12,16 +17,13 @@ body
   vertical-align top
   border 1px solid #aaa
   text-align center
-  width 340px
-  height 180px
+  width $dial-width
+  height $dial-height
   margin 40px 20px 0px
   padding 7px 0
   background $white
-  border-radius 6px
-  > a
-    display inline-block
-    width 100%
-    text-decoration none
+  border-radius(6px)
+  text-decoration none
   &:hover
     border 1px solid $gray
 
