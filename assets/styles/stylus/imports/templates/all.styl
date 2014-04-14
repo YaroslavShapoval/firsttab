@@ -7,7 +7,18 @@ body
   background url(../img/mooning.png) repeat $gray
   font-size 15px
 
+.dials-container
+  position fixed
+  top: 0
+  bottom: 100px
+  overflow-y auto
+  overflow-x hidden
+  left 0
+  right 0
+
 .dials
+  position relative
+  display inline-block
   margin 50px 40px
   text-align center
 
@@ -30,20 +41,30 @@ body
 #dial1 .dial-icon
   background-image url(../img/dials/feedly.png)
 #dial2 .dial-icon
-  background-image url(../img/dials/getpocket.png)
+  background-image url(../img/dials/raindrop.png)
 #dial3 .dial-icon
   background-image url(../img/dials/vkcom.png)
 #dial4 .dial-icon
-  background-image url(../img/dials/habrahabr.png)
-#dial5 .dial-icon
-  background-image url(../img/dials/raindrop.png)
-#dial6 .dial-icon
-  background-image url(../img/dials/evernote.png)
-#dial7 .dial-icon
-  background-image url(../img/dials/imgur.png)
-#dial8 .dial-icon
-  background-image url(../img/dials/hulu.png)
-#dial9 .dial-icon
   background-image url(../img/dials/php.png)
-#dialplus .dial-icon
-  background-image url(../img/dials/plus.png)
+#dial5 .dial-icon
+  background-image url(../img/dials/evernote.png)
+#dial6 .dial-icon
+  background-image url(../img/dials/getpocket.png)
+
+.chrome-dials
+  position fixed
+  background rgba(150, 150, 150, 0.15)
+  padding 15px
+  bottom 0px
+  right 100px
+  width 235px
+  height 60px
+
+.chrome-dial
+  position relative
+  display inline
+  margin-left 15px
+  text-decoration none
+  > img
+    width 60px
+    height 60px

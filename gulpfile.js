@@ -16,6 +16,7 @@ var lr = require('tiny-lr'), // Минивебсервер для livereload
       //stylus: ['assets/styles/stylus/**/*'],
       stylus: ['assets/styles/stylus/main.styl'],
       styluswatch: ['assets/styles/stylus/**/*'],
+      backgroundjs: ['assets/scripts/background.coffee'],
       css: ['assets/styles/css/**/*'],
       pages: ['assets/**/*.html'],
       images: ['assets/img/**/*']
@@ -64,6 +65,15 @@ gulp.task('js', function() {
   .pipe(livereload(server));
 });
 
+gulp.task('backgroundjs', function() {
+  return gulp.src(paths.backgroundjs)
+  .pipe(plumber())
+  .pipe(coffee())
+  .on('error', console.log)
+  .pipe(gulp.dest('public/js'))
+  .pipe(livereload(server));
+});
+
 gulp.task('coffee', function() {
   // Minify and copy all CoffeeScript
   return gulp.src(paths.coffee)
@@ -98,6 +108,7 @@ gulp.task('watch', function() {
   gulp.run('stylus');
   gulp.run('coffee');
   gulp.run('js');
+  gulp.run('backgroundjs');
   gulp.run('pages');
   gulp.run('images');
 
@@ -119,6 +130,10 @@ gulp.task('watch', function() {
 
     gulp.watch(paths.js, function() {
       gulp.run('js');
+    });
+
+    gulp.watch(paths.backgroundjs, function() {
+      gulp.run('backgroundjs');
     });
 
     gulp.watch(paths.pages, function() {
