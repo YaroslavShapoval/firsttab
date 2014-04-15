@@ -1,9 +1,6 @@
-// http://paul.kinlan.me/creating-a-new-new-tab-page-for-chrome/
+(function() {
+  chrome.management.getAll.forEach(entry(function() {
+    return console.log('hello' + entry);
+  }));
 
-document.addEventListener("DOMContentLoaded", function() {
-  chrome.management.getAll(getAllCallback);
-});
-
-var getAllCallback = function(list) {
-  console.log('hello, chrome user!' + list);
-};
+}).call(this);
