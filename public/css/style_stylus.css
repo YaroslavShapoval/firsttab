@@ -69,12 +69,22 @@ body {
 .chrome-dial {
   position: relative;
   display: inline;
+  cursor: pointer;
   margin-left: 15px;
   text-decoration: none;
 }
 .chrome-dial > img {
   width: 60px;
   height: 60px;
+}
+.apps-viewer {
+  background: #f00;
+  z-index: 2;
+  position: absolute;
+  bottom: 80px;
+  right: -50px;
+  width: 200px;
+  height: 150px;
 }
 .dial-icon {
   float: left;
